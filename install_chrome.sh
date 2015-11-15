@@ -2,7 +2,6 @@
 
 # Google Chrome Installer/Uninstaller for RHEL/CentOS 6 or 7
 # (C) Richard K. Lloyd 2015 <rklloyd@gmail.com>
-# See http://chrome.richardlloyd.org.uk/ for further details.
 
 # This script is in the public domain and has no warranty.
 # It needs to be run as root because it installs/uninstalls RPMs.
