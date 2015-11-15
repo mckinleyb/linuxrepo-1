@@ -1,4 +1,6 @@
-#Bash script for Adding User Accounts
+# Bash script for Adding User Accounts from a text file and notifies account holder.
+
+#### CAUTION unless modified, account PW is sent unencrypted via email ####
 
 #!/bin/bash
 
@@ -35,6 +37,6 @@ while read first_name last_name username email;
 
 		chage -d 0 $username
 		fi
-        done < unix_list.txt
+        done < text_file_of_users.txt
 
 exit 0
