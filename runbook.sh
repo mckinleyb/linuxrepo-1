@@ -245,6 +245,10 @@ echo >> $(hostname)_$(date '+%F')_runbook.txt 2>&1
 
 echo "END OF INFO" >> $(hostname)_$(date '+%F')_runbook.txt 2>&1
 
+mv $(hostname)_$(date '+%F')_runbook.txt /home/bill/Backups
+
+chown bill:bill /home/bill/Backups/$(hostname)_$(date '+%F')_runbook.txt
+
 echo "Runbook for server: $(hostname) completed"
 
-exit 0
+exit
